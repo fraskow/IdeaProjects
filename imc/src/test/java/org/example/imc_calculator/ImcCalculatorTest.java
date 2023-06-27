@@ -1,30 +1,34 @@
-package imc_calculator;
+package org.example.imc_calculator;
+
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class ImcCalculatorTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void getPeso() {
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void setPeso() {
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void getAltura() {
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void setAltura() {
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void imc() {
+        //given
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void definition() {
+        //given
     }
 }

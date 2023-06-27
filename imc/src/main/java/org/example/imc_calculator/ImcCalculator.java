@@ -1,4 +1,4 @@
-package imc_calculator;
+package org.example.imc_calculator;
 
 public class ImcCalculator {
 
@@ -30,31 +30,29 @@ public class ImcCalculator {
         return peso/(Math.pow(altura,2));
     }
 
-    public void definition(Double imc){
+    public String definition(Double imc){
         if(imc(peso,altura)<16){
-            System.out.println("Delgadez extrema");
+            return "Delgadez extrema";
         }
         if(imc(peso,altura)>=16 && imc(peso,altura)<17){
-            System.out.println("Delgadez moderada");
+            return "Delgadez moderada";
         }
         if(imc(peso,altura)>=17 && imc(peso,altura)<18.5){
-            System.out.println("Delgadez leve");
+            return "Delgadez leve";
         }
         if(imc(peso,altura)>=18.5 && imc(peso,altura)<25){
-            System.out.println("Peso normal");
+            return "Peso normal";
         }
         if(imc(peso,altura)>=25 && imc(peso,altura)<30){
-            System.out.println("Sobrepeso");
+            return "Sobrepeso";
         }
         if(imc(peso,altura)>=30 && imc(peso,altura)<35){
-            System.out.println("Obesidad leve");
+           return "Obesidad leve";
         }
         if(imc(peso,altura)>=35 && imc(peso,altura)<40){
-            System.out.println("Obesidad moderada");
+            return "Obesidad moderada";
         }
-        if(imc(peso,altura)>=40){
-            System.out.println("Obesidad morbida");
-        }
+            return "Obesidad morbida";
     }
 
 }

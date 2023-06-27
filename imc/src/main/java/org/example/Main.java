@@ -1,5 +1,5 @@
 package org.example;
-import imc_calculator.ImcCalculator;
+import org.example.imc_calculator.ImcCalculator;
 
 import java.util.Scanner;
 
@@ -18,7 +18,7 @@ public class Main {
 
         System.out.println("El imc del usuario es "+imc);
 
-        calc.definition(imc);
+        System.out.println(calc.definition(imc));
 
     }
 }
